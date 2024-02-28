@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>    
+
+    <link rel="icon" type="icon/png" href="leaf.png">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <meta name="description" content="Homesteading for sustainable living">
+      <meta name="keywords" content="home, steading, homesteading, self, sufficient, growing, plants, gardening, eco, friendly, living">
+        <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        
+        <ul>
+            <img src="logo.jpg" class="logo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="guide.html">Step-By-Step Guide</a></li>
+            <li><a href="diy.html">DIY</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="gridcontainer">
+    <section class="homesteadintro gridwhat boxesforcontent">
+    <h1>Gallery</h1>
+    <p>Welcome to our Homestead Gallery, a visual celebration of the beauty and resilience found in the heart of sustainable living. Here, we invite you to browse through captivating snapshots that capture our member's homesteading journey. From vibrant garden blooms and thriving livestock to cozy DIY projects and picturesque landscapes, our gallery is a testament to the harmony between nature and the homesteader's touch. Each image tells a story of hard work, dedication, and the rewarding moments that come from living in sync with the rhythms of the earth. </p>
+    <p>We hope these visuals inspire you to embark on your own homesteading adventure or simply find joy in the shared experiences of this enriching lifestyle. Explore the Homestead Gallery and let the images paint a vivid picture of the boundless possibilities that homesteading brings.</p>
+    <br>
+
+
+    <div class="gallery">
+        <img src="barnandfarmwithcrops.jpg" alt="BarnAndFarmWithCrops" onclick="openLightbox('barnandfarmwithcrops.jpg')">
+        <img src="harvestbasket.jpg" alt="HarvestBasket" onclick="openLightbox('harvestbasket.jpg')">
+        <img src="greenhouse.jpg" alt="Greenhouse" onclick="openLightbox('greenhouse.jpg')">
+        <img src="siloandwoodenfence.jpg" alt="SiloAndWoodenFence" onclick="openLightbox('siloandwoodenfence.jpg')">
+        <img src="housewithyellowflowers.jpg" alt="HouseWithYellowFlowers" onclick="openLightbox('housewithyellowflowers.jpg')">
+    
+    </div>
+
+    <div class="lightbox" onclick="closeLightbox()">
+        <img id="lightboxImage" src="lightboxwhite.jpg" alt="Lightbox Image">
+    </div>
+
+    <script>
+     function openLightbox(imageSrc) {
+     document.getElementById('lightboxImage').src = imageSrc;
+     document.querySelector('.lightbox').style.display = 'flex';
+    }
+
+     function closeLightbox() {
+     document.querySelector('.lightbox').style.display = 'none';
+    }
+    </script>
+
+</section>
+
+</main>
+<footer id="footercopyright">
+    <p>&copy; GreenThumbLiving 2023. All rights reserved.</p>
+</footer>
+</body>
+</html>
